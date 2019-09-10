@@ -1,0 +1,29 @@
+{
+  "name": "volgactf-final-nodejs-checker",
+  "version": "1.0.0",
+  "description": "[VolgaCTF Final devenv](https://github.com/VolgaCTF/volgactf-final-devenv) is a platform to develop & test an A/D CTF service and its checker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --verbose \"src/**/*.js\" | snazzy",
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js"
+  },
+  "author": "Alexander Pyatkin",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/router": "^8.0.1",
+    "@panva/jose": "^1.9.0",
+    "axios": "^0.19.0",
+    "koa": "^2.8.1",
+    "koa-basic-auth": "^4.0.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "nodemon": "^1.19.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "snazzy": "^8.0.0",
+    "standard": "^14.1.0"
+  }
+}

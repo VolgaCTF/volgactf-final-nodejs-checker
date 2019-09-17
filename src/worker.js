@@ -96,6 +96,9 @@ async function handlePush (payload) {
       auth: {
         username: process.env.VOLGACTF_FINAL_AUTH_MASTER_USERNAME,
         password: process.env.VOLGACTF_FINAL_AUTH_MASTER_PASSWORD
+      },
+      headers: {
+        'Content-Type': 'application/json'
       }
     })
     if (response.status !== 204) {
@@ -164,6 +167,9 @@ async function handlePull (payload) {
       auth: {
         username: process.env.VOLGACTF_FINAL_AUTH_MASTER_USERNAME,
         password: process.env.VOLGACTF_FINAL_AUTH_MASTER_PASSWORD
+      },
+      headers: {
+        'Content-Type': 'application/json'
       }
     })
     if (response.status !== 204) {
